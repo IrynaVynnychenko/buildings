@@ -90,7 +90,7 @@ label {
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 15px 80px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
@@ -104,6 +104,7 @@ label {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
+  width: 440px;
 }
 
 .header .menu-icon {
@@ -149,6 +150,15 @@ label {
 
 .header .menu-btn:checked~.menu {
   max-height: 800px;
+  height: 100%;
+  
+}
+
+.menu-block {
+  position: absolute;
+    right: 0px;
+    top: 0px;
+    content: "";
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
