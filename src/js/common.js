@@ -95,4 +95,29 @@ document.addEventListener("DOMContentLoaded", () => {
     arrows: false
   });
 
+  $('.library-carousel').slick({
+    infinite: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="../img/carousel-arrow.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../img/carousel-arrow.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: true,
+        }
+      }
+    ]
+  });
+
 });
