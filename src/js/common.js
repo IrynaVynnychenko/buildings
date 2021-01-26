@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../img/carousel-arrow.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../img/carousel-arrow.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="./img/carousel-arrow.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./img/carousel-arrow.svg"></button>',
     responsive: [
       {
         breakpoint: 991,
