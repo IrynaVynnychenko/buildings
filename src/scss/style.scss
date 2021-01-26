@@ -245,11 +245,19 @@ label {
 
   @media(max-width: 575px) {
     overflow: auto;
-    min-height: calc(100vh + 68px);
-    height: 100%;
     top: -68px;
     padding-top: 68px;
     right: -15px;
+    &.menu-height {
+      min-height: calc(100vh + 68px);
+      height: 100%;
+    }
+  }
+}
+
+.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+  @media(max-width: 575px) {
+    background-color: #f4ecdf;
   }
 }
 

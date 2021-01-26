@@ -103,11 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="./img/carousel-arrow.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="./img/carousel-arrow.svg"></button>',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 991,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 2,
+          arrows: true,
+          infinite: true,
         }
       },
       {
@@ -115,9 +116,19 @@ document.addEventListener("DOMContentLoaded", () => {
         settings: {
           slidesToShow: 1,
           arrows: true,
+          infinite: true,
         }
       }
     ]
   });
+
+  document.querySelector('.menu-btn').addEventListener('click', () => {
+    var isChecked = document.querySelector('.menu-btn').checked;
+    if (isChecked) {
+      document.querySelector('.menu-block').classList.add('menu-height');
+    } else {
+      document.querySelector('.menu-block').classList.remove('menu-height');
+    }
+  })
 
 });
