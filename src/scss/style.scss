@@ -50,6 +50,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1;
+
   @media(max-width: 575px) {
     font-size: 14px;
   }
@@ -113,6 +114,7 @@ label {
         font-size: 28px;
         font-weight: 500;
         line-height: 1.4;
+
         @media(max-width: 575px) {
           font-size: 22px;
         }
@@ -171,6 +173,10 @@ label {
 .header {
   li {
     margin-bottom: 24px;
+
+    @media(max-width: 575px) {
+      margin-bottom: 18px;
+    }
   }
 
   .menu {
@@ -215,7 +221,7 @@ label {
   }
 
   to {
-    max-height: 720px;
+    max-height: 680px;
     height: 100%;
   }
 }
@@ -268,8 +274,8 @@ label {
   padding-left: 12% !important;
 
   @media(max-width: 576px) {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 
@@ -444,6 +450,11 @@ label {
   margin-bottom: 100px;
   z-index: 2;
 
+  @media(max-width: 575px) {
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
+
   .container-fluid {
     position: relative;
     z-index: 2;
@@ -476,6 +487,12 @@ label {
       margin-bottom: 10px;
       max-width: 340px;
       width: 100%;
+      transition: 0.35s all;
+
+      &:hover {
+        color: #25333c;
+      }
+
       @media(max-width: 575px) {
         font-size: 14px;
       }
@@ -485,6 +502,7 @@ label {
       height: 5px;
       width: 50px;
       background-color: #25333c;
+
       @media(max-width: 575px) {
         height: 3px;
         width: 42px;
@@ -506,11 +524,12 @@ label {
     background-color: #bf9c66;
     height: 5px;
     width: 55px;
+
     @media(max-width: 575px) {
       height: 3px;
       width: 42px;
     }
-  
+
   }
 
   &-block {
@@ -525,11 +544,16 @@ label {
   width: 100%;
   margin-bottom: 57px;
 
+  @media(max-width: 575px) {
+    margin-bottom: 65px;
+  }
+
   p {
     margin-bottom: 20px;
     color: #26353c;
     font-size: 18px;
     line-height: 1.4;
+
     @media(max-width: 575px) {
       font-size: 14px;
     }
@@ -555,6 +579,11 @@ label {
       justify-content: center;
       margin-left: 4px;
     }
+
+    @media(max-width: 575px) {
+      margin-top: 32px;
+      font-size: 16px;
+    }
   }
 }
 
@@ -576,8 +605,10 @@ label {
   @media(max-width: 991px) {
     width: 84%;
   }
+
   @media(max-width: 575px) {
     width: 100%;
+    min-height: 66%;
   }
 }
 
@@ -586,6 +617,12 @@ label {
   position: relative;
   z-index: 1;
   padding-top: 60px;
+
+  @media(max-width: 575px) {
+    padding-top: 54px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+  }
 
   .container-fluid {
     position: relative;
@@ -627,6 +664,11 @@ label {
   @media(max-width: 768px) {
     min-height: 620px;
   }
+
+  @media(max-width: 575px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .adress {
@@ -634,6 +676,10 @@ label {
   height: 100%;
   position: relative;
   padding-top: 160px;
+
+  @media(max-width: 575px) {
+    padding-top: 60px;
+  }
 
   &-img {
     height: 100%;
@@ -660,6 +706,7 @@ label {
 
   .link {
     color: #25333c;
+
   }
 }
 
@@ -667,6 +714,19 @@ label {
   background-color: #426463;
   padding-top: 38px;
   padding-bottom: 44px;
+
+  @media(max-width: 575px) {
+    font-size: 14px;
+    padding-bottom: 70px;
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .col-lg-4:last-child {
+    .footer-link:first-child {
+      margin-bottom: 42px;
+    }
+  }
 
   &-logo {
     max-width: 130px;
@@ -681,6 +741,7 @@ label {
     background-color: #fff;
     height: 5px;
     width: 50px;
+
     @media(max-width: 575px) {
       height: 3px;
       width: 42px;
@@ -689,6 +750,10 @@ label {
 
   &-link {
     width: 100%;
+
+    &:first-child {
+      margin-bottom: 65px;
+    }
   }
 
   &-details {
@@ -742,5 +807,15 @@ a {
     &:first-child {
       margin-right: 18px;
     }
+  }
+}
+
+@media(max-width: 575px) {
+  .pb-sm-100 {
+    padding-bottom: 100px;
+  }
+
+  .pb-sm-80 {
+    padding-bottom: 80px;
   }
 }
