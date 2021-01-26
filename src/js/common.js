@@ -129,6 +129,8 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       document.querySelector('.menu-block').classList.remove('menu-height');
     }
-  })
+  });
+
+  AOS.init();
 
 });

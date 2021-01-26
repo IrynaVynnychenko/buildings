@@ -93,7 +93,7 @@ gulp.task("image-min", () =>
 
 gulp.task("compile-sass", function () {
   return gulp
-    .src(["node_modules/bootstrap/dist/css/bootstrap.css", "./src/scss/*.scss"])
+    .src(["node_modules/bootstrap/dist/css/bootstrap.css", "node_modules/aos/dist/aos.css", "./src/scss/*.scss"])
     .pipe(sass())
     .pipe(concat("style.css"))
     .pipe(gulp.dest("./src/css/"));
@@ -199,6 +199,7 @@ gulp.task("scripts", function () {
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "node_modules/slick-carousel/slick/slick.min.js",
+      "node_modules/aos/dist/aos.js",
       "./src/js/common.min.js",
     ])
     .pipe(concat("main.js"))
