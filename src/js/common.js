@@ -134,3 +134,13 @@ document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
 
 });
+
+$(window).on('load', function(){
+  setTimeout(removeLoader, 1500); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( ".loading-wrapper" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( ".loading-wrapper" ).remove(); //makes page more lightweight 
+  });  
+}
