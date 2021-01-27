@@ -248,6 +248,7 @@ label {
     top: -68px;
     padding-top: 68px;
     right: -15px;
+
     &.menu-height {
       min-height: calc(100vh + 68px);
       height: 100%;
@@ -255,7 +256,12 @@ label {
   }
 }
 
-.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+.slick-next,
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev,
+.slick-prev:focus,
+.slick-prev:hover {
   @media(max-width: 575px) {
     background-color: #f4ecdf;
   }
@@ -295,6 +301,7 @@ button {
   border-radius: 0px;
   background-color: #2b4947;
   padding: 35px 58px 65px;
+
   @media(max-width: 575px) {
     padding: 35px 32px 100px;
   }
@@ -320,6 +327,7 @@ button {
   &.link {
     color: #fff;
     font-size: 16px;
+
     &:hover {
       color: #fff;
     }
@@ -340,9 +348,11 @@ button {
     font-size: 16px;
     padding-left: 17px;
     margin-bottom: 0px;
+
     @media (max-width: 575px) {
       font-size: 14px;
     }
+
     li {
       margin-bottom: 16px;
 
@@ -1442,7 +1452,7 @@ a {
   right: 0;
   top: 0;
   animation: rotate-two 1s linear infinite;
-  border-right: 3px solid  #bf9c66;
+  border-right: 3px solid #bf9c66;
 }
 
 .inner.three {
@@ -1456,6 +1466,7 @@ a {
   0% {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
   }
+
   100% {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
   }
@@ -1465,6 +1476,7 @@ a {
   0% {
     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
   }
+
   100% {
     transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
   }
@@ -1474,6 +1486,7 @@ a {
   0% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
   }
+
   100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
@@ -1492,3 +1505,40 @@ a {
   z-index: 99;
 }
 
+.cookies {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #dfefee;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 22;
+
+  &-text {
+    @media(max-width: 991px) {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+
+    a {
+      color: #25333c;
+      font-weight: 600;
+    }
+  }
+
+  .btn {
+    background-color: #426463;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+@media(max-width: 991px) {
+  .mb-lg-20 {
+    margin-bottom: 20px;
+  }
+}

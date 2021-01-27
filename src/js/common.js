@@ -133,6 +133,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   AOS.init();
 
+  document.querySelector('.btn').addEventListener('click', () => {
+    document.querySelector('.cookies').remove();
+  });
+
 });
 
 $(window).on('load', function(){
